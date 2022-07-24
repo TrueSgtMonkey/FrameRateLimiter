@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Pyramid.tscn" type="PackedScene" id=1]
+
+[node name="Main" type="Spatial"]
+
+[node name="Pyramid" parent="." instance=ExtResource( 1 )]
+fps = 10.0
+
+[node name="Pyramid2" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6.30403, 0, 0 )
+
+[node name="Pyramid3" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7.80594, 0, 0 )
+fps = 50.0
+
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( 0.776757, -0.272704, 0.567698, -0.044221, 0.875553, 0.481094, -0.628246, -0.398797, 0.668032, 9.77032, 12.0145, 13.5725 )
